@@ -1,5 +1,5 @@
+/* eslint-disable @typescript-eslint/unbound-method */
 import { SapphireClient } from '@sapphire/framework';
 import { Api } from './lib/Api';
 
-// eslint-disable-next-line @typescript-eslint/unbound-method
-SapphireClient.plugins.registerPostInitializationHook(Api.postInitializationHook);
+SapphireClient.plugins.registerPreGenericsInitializationHook(Api.preGenericsInitializationHook);

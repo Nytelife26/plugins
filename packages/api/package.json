@@ -11,7 +11,9 @@
 		"test": "jest",
 		"prelint": "yarn test && yarn build",
 		"lint": "eslint src tests --ext ts --fix",
-		"build": "tsc -b src"
+		"clean": "rimraf dist",
+		"build": "tsc -b src",
+		"prepare": "yarn clean && yarn build"
 	},
 	"dependencies": {
 		"@sapphire/utilities": "github:sapphire-project/utilities#build-utilities"

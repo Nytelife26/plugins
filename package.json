@@ -5,6 +5,7 @@
 		"packages/*"
 	],
 	"scripts": {
+		"prepare": "lerna run prepare --parallel",
 		"clean": "rimraf packages/**/dist",
 		"lint": "eslint packages --ext js,ts --fix",
 		"format": "prettier --write packages/**/{src,tests,scripts}/**/*.{mjs,ts,js}",

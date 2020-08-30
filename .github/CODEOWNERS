@@ -1,2 +1,5 @@
 /src/ @kyranet @favna
 /tests/ @kyranet @favna
+
+# Plugin - Api
+/packages/api/ @kyranet @favna @quantumlytangled
